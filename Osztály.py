@@ -12,16 +12,17 @@ class Teglalap:
     def kerulet(self):
             return 2 * (self.a_oldal + self.b_oldal)
 
+if __name__ == '__main__':
 
-t1 = Teglalap()
-print (t1.a_oldal,t1.b_oldal)
-print(t1.szog)
-print(t1.terulet())
-print(t1.kerulet())
+    t1 = Teglalap()
+    print (t1.a_oldal,t1.b_oldal)
+    print(t1.szog)
+    print(t1.terulet())
+    print(t1.kerulet())
 
-t2 = Teglalap(a_oldal=3,b_oldal=8)
-print (t2.a_oldal,t2.b_oldal)
-print(t2.szog)
-print(t2.terulet())
-print(t2.kerulet())
+    t2 = Teglalap(a_oldal=3,b_oldal=8)
+    print (t2.a_oldal,t2.b_oldal)
+    print(t2.szog)
+    print(t2.terulet())
+    print(t2.kerulet())
 
