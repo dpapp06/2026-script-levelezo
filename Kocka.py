@@ -7,7 +7,7 @@ def dobas():
     db=int(dobas_szam.get())
     eredmenyek = [0] * 7
     for i in range(db):
-        eredmenyek = [random.randint(1,6)]+=1
+        eredmenyek[random.randint(1,6)]+=1
     szoveg=""
     for i in range(1, 7):
         szoveg += f"{i}. oldal = {eredmenyek[i]}\n"
@@ -21,7 +21,7 @@ root.resizable(False, False)
 
 
 cim_cimke =ttk.Label(text="Kockajáték", font=("Arial", 14, "bold") )
-cim_cimke.grid(column=1, row=0,padx=20,pady=20,rowspan=20)
+cim_cimke.grid(column=0, row=1,padx=20,pady=20,rowspan=20)
 
 dobas_szam = tk.StringVar(value="10")
 dobas_szam_be =ttk.Entry(textvariable=dobas_szam,width=10)
